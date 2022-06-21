@@ -12,15 +12,11 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: inherit;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
     outline: none;
-    text-decoration: none;
     transition: all .2s linear;
 }
 
@@ -118,7 +114,7 @@ a {
 }
 
 .heading {
-    margin: 3rem;
+    margin: auto;
     display: inline;
     color: #fff;
     font-size: 1.5rem;
@@ -361,14 +357,14 @@ input {
     background: #fff;
 }
 
-@media only screen and (max-width: 500px) {
+@media(max-width: 500px) {
     .footer-info {
         display: table !important;
         columns: 1 !important;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media(max-width: 750px) {
     .nav-menu .nav-items {
         flex-direction: column;
     }
@@ -382,7 +378,7 @@ input {
     }
 }
 
-@media only screen and (max-width: 1130px) {
+@media(max-width: 1130px) {
     .posts-image,
     .posts-info {
         left: auto !important;
