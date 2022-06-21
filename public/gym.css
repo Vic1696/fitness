@@ -1,0 +1,403 @@
+@import url("./public/fonts.css");
+:root {
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #fff;
+    --midnight: #104f55;
+    --i-socials-hover: #a1c4cf;
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --ubuntu: "ubuntu", sans-serif
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.nav {
+    background: #fff;
+    padding: 0 2rem;
+    height: 1rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-brand {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: ubuntu, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: re;
+    top: 0%;
+    width: 30%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    margin: 0%;
+}
+
+.nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: robotoThin;
+}
+
+.nav-link:hover {
+    background-color: var(--midnight);
+}
+
+.nav-link:hover a {
+    color: var(--white);
+}
+
+.socials {
+    padding: 1.4rem 0rem;
+}
+
+.socials :hover {
+    color: var(--midnight);
+    font-size: 1.6rem;
+}
+
+.collapse {
+    height: 20rem;
+}
+
+.background {
+    background-image: url("./images/images-5.jpg");
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading {
+    margin: 3rem;
+    display: inline;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.heading h1 {
+    font-size: 2.8rem;
+}
+
+.btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    border: 0;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #3f4954;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.owl-carousel {
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    padding-top: 5rem;
+}
+
+.item-content {
+    font-family: montserrat, sans-serif;
+    color: #3f4954;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 15px 20px rgba(57, 67, 78, 2.5);
+    padding: 1rem;
+}
+
+.item {
+    margin: 3%;
+}
+
+.item-image {
+    height: 50vh;
+    width: 80%;
+}
+
+.btn.content:hover {
+    color: #0f0f0f;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    font-size: 30px;
+    margin: 5px 25px;
+    padding: 10px 7px;
+    padding: 20px 7px 5px;
+    ;
+    background: transparent;
+    display: inline-block;
+}
+
+.owl-nav-prev {
+    position: absolute;
+    top: 0%;
+    width: 100;
+    margin: 0 auto;
+    padding: 0 5px;
+    background: transparent;
+}
+
+.owl-nav-next {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+.site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.posts-info {
+    color: gray;
+    font-size: 12px;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    border-radius: 2rem;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+    justify-content: flex-start;
+    margin-top: -5%;
+    margin-left: 25%;
+    z-index: 1.2;
+    width: 50%;
+}
+
+.post1 {
+    left: 20vw;
+    padding: 0 4rem;
+    margin-left: auto;
+}
+
+.posts-content {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.posts-image {
+    transition: 1.5s ease-in-out;
+}
+
+.posts-image:hover {
+    transform: scale(1.2);
+}
+
+.post-title a {
+    font-family: ubuntu, sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-family: montserrat;
+}
+
+.post-btn {
+    margin: 0;
+}
+
+.btn.post-btn:hover {
+    color: inherit;
+    border: 2px solid #000;
+}
+
+.pagination {
+    justify-content: center;
+    color: #3f4954;
+}
+
+.numbers {
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    border-radius: 5rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn-categories {
+    padding: 5px 10px;
+    margin: .8rem auto;
+}
+
+.btn-categories:hover {
+    color: inherit;
+    border: 2px solid #000;
+}
+
+.sidebar-heading {
+    text-align: center;
+    font-family: robotoThin;
+    color: #0f0f0f;
+}
+
+.sidebar .btn-categories {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+
+.sidebar .posts-info {
+    margin-left: 0%
+}
+
+.sidebar .posts-image {
+    margin: 0% auto;
+    padding: 8% auto;
+}
+
+.arrow {
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.About-Us,
+.Newsletter,
+.Follow-us {
+    width: 40%;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.footer {
+    background: #0f0f0f;
+    color: #686666da;
+    font-family: montserrat, sans-serif;
+}
+
+.social-platforms .fa-brands {
+    padding: 0.8rem;
+}
+
+input {
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-family: robotoThin;
+    width: 70%
+}
+
+.Newsletter span {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+.footer-info h1 {
+    font-family: robotoThin;
+    color: #fff;
+}
+
+.move-up:hover {
+    background: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-info {
+        display: table !important;
+        columns: 1 !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-menu .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+    .footer-info {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        padding: 5px auto;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .posts-image,
+    .posts-info {
+        left: auto !important;
+        bottom: 1rem !important;
+        background: transparent;
+        color: purple;
+    }
+    .About-Us,
+    .Newsletter,
+    .social-platforms {
+        width: 100%;
+        text-align: center;
+    }
+    .site-content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

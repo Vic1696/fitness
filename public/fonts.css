@@ -1,0 +1,19 @@
+@font-face {
+    font-family: robotoBoldItalic;
+    src: url(./fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: robotoThin;
+    src: url(./fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
